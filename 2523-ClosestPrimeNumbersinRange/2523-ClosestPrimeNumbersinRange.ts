@@ -1,4 +1,6 @@
+// Last updated: 3/7/2025, 3:05:05 AM
 function closestPrimes(left: number, right: number): number[] {
+    // I used Sieve Of Eratosthenes algorithm to find prime numbers 
     let findPrimes = (s: number, n: number): number[] => {
         let primes: boolean[] = new Array(n + 1).fill(true);
         primes[0] = false;
